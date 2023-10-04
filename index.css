@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: rgb(105, 17, 147);
+}
+
+nav{
+    width: 80%;
+    margin: auto;
+}
+
+header > nav > div {
+    width: 50px;
+    height: 50px;
+}
+
+header > nav > div > img {
+    width: 100%;
+}
+
+header > nav > .divInline{
+    display: inline-block;
+}
+
+header > nav > .mleftnav{
+    margin-left: 60%;
+    display: inline-flex;
+}
+
+.mleftnav > a {
+    background-color: black;
+    width: 600px;
+    display: inline-block;
+}
+
+.mleftnav > a > img{
+    width: 20px;
+    display: inline-flex;
+}
