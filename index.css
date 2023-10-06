@@ -4,11 +4,14 @@
 }
 header{
     background-color: rgb(105, 17, 147);
+    position: fixed;
+    width: 100%;
 }
 
 nav{
     width: 80%;
     margin: auto;
+    display: flex;
 }
 
 header > nav > div {
@@ -17,25 +20,65 @@ header > nav > div {
 }
 
 header > nav > div > img {
-    width: 100%;
+    width: 60px;
+    cursor: pointer;
 }
 
 header > nav > .divInline{
-    display: inline-block;
-}
-
-header > nav > .mleftnav{
-    margin-left: 60%;
     display: inline-flex;
 }
 
-.mleftnav > a {
-    background-color: black;
-    width: 600px;
-    display: inline-block;
+header > nav > .mLeftNav{
+    margin-left: 35%;
+    display: flex;
 }
 
-.mleftnav > a > img{
-    width: 20px;
+header > nav > .mLeftNav > img{
+    cursor: pointer;
+}
+
+.mLeftNav > a {
     display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.mLeftNav > a > img{
+    margin-right: 10px;
+}
+
+.mLeftNav > input[type='text']{
+    width: 300px;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+header > .contentThemes{
+    background-color: white !important;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+header > .contentThemes > ul {
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100%;
+}
+
+header > .contentThemes > ul > li{
+    margin-left: 100px;
 }
