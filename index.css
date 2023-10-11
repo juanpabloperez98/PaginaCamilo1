@@ -6,6 +6,7 @@ header{
     background-color: rgb(105, 17, 147);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav{
@@ -81,4 +82,132 @@ header > .contentThemes > ul {
 
 header > .contentThemes > ul > li{
     margin-left: 100px;
+}
+header > .contentThemes > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+header > .contentThemes > ul > li#borderViolet{
+    border-bottom: 4px solid violet;
+}
+header > .contentThemes > ul > li#borderOrange{
+    border-bottom: 4px solid orange;
+}
+header > .contentThemes > ul > li#borderGreen{
+    border-bottom: 4px solid green;
+}
+header > .contentThemes > ul > li#borderYellow{
+    border-bottom: 4px solid yellow;
+}
+
+.banner{
+    padding-top: 100px;
+    background-image: url('./assets/fondo_banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    display: flexbox;
+    position: relative;
+    z-index: -1;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.banner > div {
+    margin-top: 100px;
+}
+.banner > div > a{
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.banner > div > h1{
+    font-size: 3.2rem;
+    width: 70%;
+    margin: 60px auto auto auto;
+    color: white;
+}
+
+#container{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    position: relative;
+}
+ .social-links {
+    list-style-type: none;      /* Elimina los puntos de la lista */
+    padding: 20px;                 /* Elimina el padding predeterminado */
+    margin: 0;                  /* Elimina el margen predeterminado */
+}
+
+.social-links li {
+    margin-bottom: 50px;        /* Espacio entre enlaces */
+}
+
+#container > .mainContainer{
+    width: 60%;
+    padding: 20px;
+}
+
+
+#articleSection{}
+/* #articleSection{
+    display: flex;
+    flex-direction: column;
+} */
+
+#articleSection > h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(105, 17, 147);
+}
+
+#articleSection > .contentImagen{
+    width: 400px;
+    height: 200px;
+}
+
+#articleSection > .subsciprtionSection{
+    margin-top: 20px;
+}
+
+#articleSection > .subsciprtionSection > p{
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#articleSection  > form > input[type="email"]{ 
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    pointer-events: auto;
+    border-radius: 10px;
+}
+
+#articleSection  > form > button{ 
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+
+#articleSection > .contentImagen > img{
+    width: 100%;
+    border: 3px solid black;
 }
