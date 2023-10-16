@@ -211,3 +211,35 @@ header > .contentThemes > ul > li#borderYellow{
     width: 100%;
     border: 3px solid black;
 }
+
+
+.pie_pagina{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+
+.pie_pagina .box{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.pie_pagina .box figure img{
+    width: 100px;
+}
+
+.pie_pagina a {
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(154, 154, 154);
+}
+
+.pie_pagina p{
+    color: bisque;
+}
+
+.pie_pagina h2{
+    color: aliceblue;
+}
