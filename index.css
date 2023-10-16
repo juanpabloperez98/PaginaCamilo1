@@ -50,6 +50,10 @@ header > nav > .mLeftNav > img{
     margin-left: 20px;
 }
 
+.mLeftNav > a:hover {
+    font-size: 11px;
+}
+
 .mLeftNav > a > img{
     margin-right: 10px;
 }
@@ -86,6 +90,9 @@ header > .contentThemes > ul > li{
 header > .contentThemes > ul > li > a{
     text-decoration: none;
     color: black;
+}
+header > .contentThemes > ul > li > a:hover{
+    font-size: 15px;
 }
 header > .contentThemes > ul > li#borderViolet{
     border-bottom: 4px solid violet;
@@ -159,6 +166,12 @@ header > .contentThemes > ul > li#borderYellow{
     margin-bottom: 50px;        /* Espacio entre enlaces */
 }
 
+.social-links li a img{
+    width: 48px;
+    height: 48px;
+}
+
+
 #container > .mainContainer{
     width: 60%;
     padding: 20px;
@@ -224,6 +237,7 @@ header > .contentThemes > ul > li#borderYellow{
     display: inline-block;
     padding: 10px;
     vertical-align: top;
+    margin-left: 50px;
 }
 
 .pie_pagina .box figure img{
@@ -236,10 +250,19 @@ header > .contentThemes > ul > li#borderYellow{
     color:rgb(154, 154, 154);
 }
 
+.pie_pagina .contentAbout a{
+    display: block;
+}
+
 .pie_pagina p{
     color: bisque;
 }
 
 .pie_pagina h2{
     color: aliceblue;
+}
+
+footer .container{
+    width: 80%;
+    margin: auto;
 }
