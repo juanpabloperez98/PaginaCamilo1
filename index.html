@@ -15,8 +15,8 @@
                 <img src="./assets/icono_cabecera.png" alt="icono_cabecera.png">
             </div>
             <div class="mLeftNav">
-                <input type="text">
-                <img src="./assets/icono_search.png" alt="icono_search.png">
+                <input type="text" id="inputTextSearch">
+                <img id="searchBoton" src="./assets/icono_search.png" alt="icono_search.png">
                 <a href="#">
                     <img src="./assets/icono_academica.png" alt="icono_academica.png">
                     OFERTA ACADEMICA
@@ -241,7 +241,7 @@
             </div>
             <form action="" method="post">
                 <input type="email" name="email" id="email" placeholder="Correo Electronico">
-                <button type="submit">Suscribirse</button>
+                <button type="submit" id="boton-suscribirse">Suscribirse</button>
             </form>
         </article>
     </div>
@@ -291,5 +291,26 @@
     </footer>
 
 </body>
+
+<script>
+    /*let boton = document.querySelector("#boton-desuscribirse");
+    boton.addEventListener("click", () => {
+        alert("!Boton preionado!")
+    })
+    console.log(boton)*/
+    /*let boton = document.querySelector("#searchBoton");
+    boton.addEventListener("click", () => {
+        let text = document.querySelector("#inputTextSearch");
+        alert(text.value)
+    })
+    console.log(boton)*/
+
+
+    let form_ = document.querySelector("form");
+    form_.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log("Formularios enviados")
+    })
+</script>
 
 </html>
