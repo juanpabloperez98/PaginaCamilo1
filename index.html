@@ -292,4 +292,63 @@
 
 </body>
 
+<script>
+
+    function saludar() {
+        console.log("Hola mundo!")
+    }
+    //saludar();
+
+    /*let suma = function (x,y) {
+        return x + y;
+    }*/
+
+    let suma = (x, y) => x + y;
+
+    let resta = (x, y) => {
+        console.log("Voy a entrar a la función restar");
+        saludar();
+        return x - y;
+    }
+
+    console.log(resta(2, 2));
+
+    let persona = {
+        nombre: "Juan",
+        edad: 25,
+        saludar: () => {
+            console.log("Hola mundo!!")
+        }
+    }
+
+    for (const property in persona) {
+        console.log(`${property}: ${persona[property]} jhjfgh`);
+    }
+    //console.log(Object.entries(persona));
+
+    let arreglos = [1,2,3,4,5,6];
+
+    console.log(arreglos);
+    
+    //arreglos.push('7');
+    //let vars = [a, b, ...rest] = arreglos 
+    
+    arreglos.pop()
+    console.log(arreglos);
+
+    let jsonObject = {
+        nombre: "Juan",
+        edad: 30
+    };
+    let jsonString = JSON.stringify(jsonObject)
+
+
+    console.log(jsonString);
+    
+    let jsonObjeto = JSON.parse(jsonString);
+    console.log(jsonObjeto);
+
+    
+</script>
+
 </html>
