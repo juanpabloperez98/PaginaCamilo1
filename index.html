@@ -305,12 +305,19 @@
     })
     console.log(boton)*/
 
-
+    let input_=document.querySelector("input");
     let form_ = document.querySelector("form");
     form_.addEventListener("submit", (event) => {
         event.preventDefault();
         console.log("Formularios enviados")
+        let input_=document.querySelector("#email")
+        if(input_.value === ""){
+            alert("Introduce algo: ")
+        }else{
+            alert("Tu correo: "+ input_.value)
+        }
     })
+
 </script>
 
 </html>
